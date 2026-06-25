@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>부산한상</title>
+    <!-- 파비콘 연결 -->
+    <link rel="shortcut icon" href="./imges/apple-icon-120x120.png" type="image/x-icon">
+    <!-- 외부 css 연결 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CDN 형식으로 연결한 aosjs -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrap_wrap">
+        <div id="wrap"><!-- 헤더전체랩 s -->
+            <div class="header_wrap">
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./imges/main_logo.png" alt="부산한상로고">
+                    </a>
+                </h1>
+                <ul id="gnb">
+                    <li><a href="./sub_about.html">한상소개<div class="solid"></div></a>
+                        <ul class="sub">
+                            <li><a href="./sub_about.html#story_wrap">Brand</a></li>
+                            <li><a href="./sub_about.html#c_wrap">Point</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="./sub_market.html">한상마켓<div class="solid"></div></a>
+                        <ul class="sub">
+                            <li><a href="./sub_market.html#sea_wrap">수산물</a></li>
+                            <li><a href="./sub_market.html#farm_container">농산물</a></li>
+                            <li><a href="./sub_market.html#meat_wrap">축산물</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub_recipe.html">한상레시피<div class="solid"></div></a>
+                        <ul class="sub">
+                            <li><a href="./sub_recipe.html#recipe_wrap">추천레시피</a></li>
+                            <li><a href="./sub_recipe.html#fast_wrap">10분완성</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub_center.html">한상센터<div class="solid"></div></a>
+                        <ul class="sub">
+                            <li><a href="./sub_center.html#event_wrap">한상이벤트</a></li>
+                            <li><a href="./sub_center.html#qa_wrap">Q&A</a></li>
+                            <li><a href="./sub_center.html#news_wrap">한상소식</a></li>
+                            <li><a href="./sub_center.html#join-wrap">입점안내</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="search_box">
+                    <input type="search" placeholder="Search">
+                </div>
+                <ul class="gnb_icon">
+
+                    <li><a href="#">
+                            <!-- 기본 장바구니 -->
+                            <img src="./imges/me_icon1.png" alt="마이페이지" class="normal_img">
+                            <!-- 호버 시 장바구니 -->
+                            <img src="./imges/me_icon2.png" alt="마이페이지" class="hover_img">
+                        </a></li>
+                    <li><a href="#">
+                            <!-- 기본 장바구니 -->
+                            <img src="./imges/cart_icon1.png" alt="장바구니" class="normal_img">
+                            <!-- 호버 시 장바구니 -->
+                            <img src="./imges/cart_icon2.png" alt="장바구니" class="hover_img">
+                        </a></li>
+                </ul>
+
+            </div>
+            <div class="sub_bg"></div>
+        </div><!-- 헤더전체랩 e -->
+        <div id="main"><!-- 메인영상 s -->
+
+            <video class="main-video" autoplay loop muted playsinline>
+                <source src="./imges/seavideo.mp4" type="video/mp4">
+            </video>
+            <div class="main_title" data-aos="fade-left" data-aos-duration="1000">
+                <h1>부산의 신선함은 그대로, <br>
+                    당신의 식탁에 가장 현명한 선택을 전합니다.</h1>
+                <p>
+                    부산에서 갓 수확한 신선함 식재료와 엄선된 특산품을 만나보세요.
+                </p>
+                <ul class="button">
+                    <li><a href="#">신선식품 보러가기 <span class="arrow">&rarr;</span></a></li>
+                    <li><a href="#">한상소개 <span class="arrow">&rarr;</span></a></li>
+
+                </ul>
+            </div>
+        </div><!-- 메인영상 e -->
+        <div id="md_wrap"><!-- mdpick s-->
+            <div class="text">
+                <h1 data-aos="fade-left" data-aos-duration="1000">MD PICK <img src="./imges/sun_icon.png" alt="해아이콘">
+                </h1>
+                <p data-aos="fade-right" data-aos-duration="1000">부산의 신선함을<br>
+                    엄선한 추천 상품</p>
+                <a href="#" data-aos="fade-right" data-aos-duration="1000">자세히 보기<span class="arrow">&rarr;</span></a>
+            </div>
+
+            <div id="menu"><!-- 메뉴 리스트 s -->
+                <div id="menu_wrapper">
+                    <!-- 1. 탭  -->
+                    <ul class="tabs" data-aos="fade-left" data-aos-duration="1000">
+                        <li class="active">
+                            <a href="#"><span tabs="#tab-farm"><img src="./imges/tab_icon1.png" alt="icon">
+                                    수산물</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span tabs="#tab-sea"><img src="./imges/tab_icon2.png" alt="icon">
+                                    농산물</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span tabs="#tab-meat"><img src="./imges/tab_icon3.png" alt="icon">
+                                    축산물</span></a>
+                        </li>
+
+                    </ul>
+                    <!-- 2. 컨테이너  -->
+                    <div class="tab_container" data-aos="fade-left" data-aos-duration="1000">
+                        <!-- 🐟 수산물  -->
+                        <div id="tab-farm" class="tab_content active">
+                            <div class="slider-wrapper">
+                                <button class="nav-btn prev-btn">‹</button>
+                                <button class="nav-btn next-btn">›</button>
+                                <div class="slider-container">
+                                    <div class="slider-track">
+                                        <!-- 상품 1 ~ 8  -->
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/food/food1.png" alt="명란젓"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">명란젓</h3>
+                                                <div class="original-price">24,000원</div>
+                                                <div class="price-info"><span class="discount">30%</span><span
+                                                        class="current-price">16,800원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">싱싱산지
+                                                        🌊</span><span class="badge badge-orange">당일출고 👍</span></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/sea/sea_menu1.png" alt="오징어">
+                                            </div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">오징어</h3>
+                                                <div class="original-price">37,500원</div>
+                                                <div class="price-info"><span class="discount">25%</span><span
+                                                        class="current-price">30,000원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">주문폭주
+                                                        💥</span><span class="badge badge-orange">당일출고 👍</span></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/sea/sea_menu2.jpeg" alt="고등어">
+                                            </div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">고등어2마리</h3>
+                                                <div class="original-price">16,000원</div>
+                                                <div class="price-info"><span class="discount">25%</span><span
+                                                        class="current-price">12,800원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">주문폭주
+                                                        💥</span><span class="badge badge-orange">당일출고 👍</span></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/sea/sea_menu3.jpeg" alt="기장미역">
+                                            </div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">기장미역</h3>
+                                                <div class="original-price">24,000원</div>
+                                                <div class="price-info"><span class="discount">20%</span><span
+                                                        class="current-price">20,000원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">주문폭주
+                                                        💥</span><span class="badge badge-orange">당일출고 👍</span></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/food/food5.png" alt="부산김"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">낙동김</h3>
+                                                <div class="original-price">45,000원</div>
+                                                <div class="price-info"><span class="discount">20%</span><span
+                                                        class="current-price">36,000원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">특가할인
+                                                        🔥</span><span class="badge badge-orange">무료배송 🚚</span></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/food/food4.png" alt="어묵"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">부산어묵</h3>
+                                                <div class="original-price">22,000원</div>
+                                                <div class="price-info"><span class="discount">15%</span><span
+                                                        class="current-price">18,700원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">인기상품 ⭐</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/sea/sea_menu5.jpeg" alt="새우"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">말린새우500g</h3>
+                                                <div class="original-price">25,000원</div>
+                                                <div class="price-info"><span class="discount">10%</span><span
+                                                        class="current-price">22,500원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">주문폭주
+                                                        💥</span><span class="badge badge-orange">당일출고 👍</span></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/sea/sea_menu7.png" alt="갈치"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">갈치 5개</h3>
+                                                <div class="original-price">65,000원</div>
+                                                <div class="price-info"><span class="discount">12%</span><span
+                                                        class="current-price">56,900원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">주문폭주
+                                                        💥</span><span class="badge badge-orange">당일출고 👍</span></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/sea/sea_menu8.png" alt="전복"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">전복1kg</h3>
+                                                <div class="original-price">45,000원</div>
+                                                <div class="price-info"><span class="discount">45%</span><span
+                                                        class="current-price">22,900원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">주문폭주
+                                                        👍</span><span class="badge badge-orange">당일출고 💥</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 🌱 농산물  -->
+                        <div id="tab-sea" class="tab_content">
+                            <div class="slider-wrapper">
+                                <button class="nav-btn prev-btn">‹</button>
+                                <button class="nav-btn next-btn">›</button>
+                                <div class="slider-container">
+                                    <div class="slider-track">
+                                        <!-- 수산물 상품 예시 데이터 -->
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/farm/farm2.png" alt="대저토마토"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">대저토마토 2.5kg</h3>
+                                                <div class="original-price">47,800원</div>
+                                                <div class="price-info"><span class="discount">50%</span><span
+                                                        class="current-price">23,900원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">싱싱산지
+                                                        🌊</span><span class="badge badge-orange">당일출고 👍</span></div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/farm/farm5.png" alt="대파"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">대파</h3>
+                                                <div class="original-price">4,510원</div>
+                                                <div class="price-info"><span class="discount">10%</span><span
+                                                        class="current-price">4,100원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">주문폭주 💥</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/farm/farm3.png" alt="배추"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">배추 1kg</h3>
+                                                <div class="original-price">13,500원</div>
+                                                <div class="price-info"><span class="discount">25%</span><span
+                                                        class="current-price">10,800원</span></div>
+                                                <div class="badge-box"><span class="badge badge-orange">당일출고 👍</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/farm/farm6.png" alt="당근"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">햇 당근 3kg</h3>
+                                                <div class="original-price">22,890원</div>
+                                                <div class="price-info"><span class="discount">52%</span><span
+                                                        class="current-price">10,900원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">특가할인
+                                                        🔥</span><span class="badge badge-orange">무료배송 🚚</span></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/farm/farm1.png" alt="표고버섯"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">표고버섯1kg</h3>
+                                                <div class="original-price">22,000원</div>
+                                                <div class="price-info"><span class="discount">15%</span><span
+                                                        class="current-price">18,700원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">인기상품 ⭐</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 🥩축산물  -->
+                        <div id="tab-meat" class="tab_content">
+                            <div class="slider-wrapper">
+                                <button class="nav-btn prev-btn">‹</button>
+                                <button class="nav-btn next-btn">›</button>
+                                <div class="slider-container">
+                                    <div class="slider-track">
+
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/meat/meat1.png" alt="등심"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">등심</h3>
+                                                <div class="original-price">64,000원</div>
+                                                <div class="price-info"><span class="discount">30%</span><span
+                                                        class="current-price">46,800원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">싱싱산지
+                                                        🌊</span><span class="badge badge-orange">당일출고 👍</span></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/meat/meat2.jpg" alt="안심"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">안심</h3>
+                                                <div class="original-price">45,000원</div>
+                                                <div class="price-info"><span class="discount">20%</span><span
+                                                        class="current-price">36,000원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">특가할인
+                                                        🔥</span><span class="badge badge-orange">무료배송 🚚</span></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/meat/meat3.jpg" alt="채끝"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">채끝</h3>
+                                                <div class="original-price">42,000원</div>
+                                                <div class="price-info"><span class="discount">15%</span><span
+                                                        class="current-price">38,700원</span></div>
+                                                <div class="badge-box"><span class="badge badge-blue">인기상품 ⭐</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <div class="image-box"><img src="./imges/meat/meat4.jpg" alt="곰탕"></div>
+                                            <div class="content-box">
+                                                <h3 class="product-title">곰탕</h3>
+                                                <div class="original-price">32,000원</div>
+                                                <div class="price-info"><span class="discount">25%</span><span
+                                                        class="current-price">24,000원</span></div>
+                                                <div class="badge-box"><span class="badge badge-orange">당일출고 👍</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- 메뉴 리스트 e-->
+        </div><!-- mdpick e -->
+        <div class="banner-slider-wrapper"><!-- 가로베너슬라이드s -->
+            <div class="banner-container" data-aos="fade-up" data-aos-duration="1000">
+                <div class="banner-track">
+                    <a href="#" class="banner-card">
+                        <div class="bg-image-box">
+                            <img src="./imges/main_banner_image.png" alt="제철 수산물 기획전 배경">
+                        </div>
+
+                        <!-- 텍스트 및 버튼 콘텐츠 영역 -->
+                        <div class="banner-content">
+                            <h1 class="banner-title">제철 수산물 기획전</h1>
+                            <p class="banner-subtitle">지금 가장 신선한 바다의 맛을 만나보세요!</p>
+                            <div class="detail-btn">
+                                자세히보기 <span class="arrow">&rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 슬라이드 2 -->
+                    <a href="#" class="banner-card">
+                        <div class="bg-image-box">
+                            <img src="./imges/seafood_banner.png" alt="부산 특산물 기획전 배경">
+                        </div>
+                        <div class="banner-content">
+                            <h1 class="banner-title">기장미역 기획전</h1>
+                            <p class="banner-subtitle">청정 부산 기장에서 자란 싱싱한 자연의 맛!</p>
+                            <div class="detail-btn">
+                                자세히보기 <span class="arrow">&rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 슬라이드 3 -->
+                    <a href="#" class="banner-card">
+                        <div class="bg-image-box">
+                            <img src="./imges/meat_banner.png" alt="부산 특산물 기획전 배경">
+                        </div>
+                        <div class="banner-content">
+                            <h1 class="banner-title">프리미엄 한우 기획전</h1>
+                            <p class="banner-subtitle">지금 가장 신선한 1++한우를 만나보세요!</p>
+                            <div class="detail-btn">
+                                자세히보기 <span class="arrow">&rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div><!-- .banner-track END -->
+            </div><!-- .banner-container END -->
+
+            <!-- 슬라이드 좌우 이동 컨트롤 버튼 
+            <button type="button" class="slide-nav-btn prev-btn">&lt;</button>
+            <button type="button" class="slide-nav-btn next-btn">&gt;</button>-->
+
+        </div><!-- 가로베너슬라이드 e -->
+        <div id="fix_banner"><!-- 고정배너 -->
+            <p> 전문가가 엄선한 제철 큐레이션으로 <br>
+                지금 가장 맛있는 부산의 맛을 선사합니다.</p>
+        </div><!-- 고정배너 e-->
+        <div class="insta-slider-wrapper"> <!-- 인스타 s -->
+            <!-- 인스타그램 타이틀 -->
+            <h3 class="insta-title" data-aos="fade-left" data-aos-duration="1000">
+                INSTARGRAM <img src="./imges/instar_icon.png" alt="하트"></h3>
+            <p data-aos="fade-right" data-aos-duration="1000">실시간 부산한상! 절대 놓치지 마세요</p>
+
+            <div class="insta-slider-container">
+                <div class="insta-slider-track" id="instaSliderTrack">
+
+                    <!-- 피드 1 -->
+                    <a href="https://instagram.com" target="_blank" class="insta-card">
+                        <div class="insta-image-box">
+                            <img src="./imges/instargram_image/imgi_1.png" alt="생선구이 조림">
+                        </div>
+                    </a>
+
+                    <!-- 피드 2 -->
+                    <a href="https://instagram.com" target="_blank" class="insta-card">
+                        <div class="insta-image-box">
+                            <img src="./imges/instargram_image/imgi_2.png" alt="고기 국밥">
+                        </div>
+                    </a>
+
+                    <!-- 피드 3 -->
+                    <a href="https://instagram.com" target="_blank" class="insta-card">
+                        <div class="insta-image-box">
+                            <img src="./imges/instargram_image/imgi_3.png" alt="어묵우동">
+                        </div>
+                    </a>
+
+                    <!-- 피드 4 -->
+                    <a href="https://instagram.com" target="_blank" class="insta-card">
+                        <div class="insta-image-box">
+                            <img src="./imges/instargram_image/imgi_4.png" alt="토마토마리네이드">
+                        </div>
+                    </a>
+                    <!-- 피드 5 -->
+                    <a href="https://instagram.com" target="_blank" class="insta-card">
+                        <div class="insta-image-box">
+                            <img src="./imges/instargram_image/imgi_5.png" alt="감바스 해산물">
+                        </div>
+                    </a>
+                    <!-- 피드 6 -->
+                    <a href="https://instagram.com" target="_blank" class="insta-card">
+                        <div class="insta-image-box">
+                            <img src="./imges/instargram_image/imgi_6.png" alt="소고기부리또">
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div><!-- 인스타 e-->
+        <div id="event_wrap" ><!-- 이벤트 s-->
+            <ul class="event">
+                <li class="title_1">
+                    <h1 data-aos="fade-left" data-aos-duration="1000">EVENT <img src="./imges/event_icon.png"
+                            alt="이벤트아이콘"></h1>
+                    <P data-aos="fade-right" data-aos-duration="1000">지금 진행중인 <br>
+                        특별한 혜택</P>
+                    <a href="#" data-aos="fade-right" data-aos-duration="1000">자세히 보기<span
+                            class="arrow">&rarr;</span></a>
+                </li>
+                <li class="bg" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./imges/event_image1.png" alt="이벤트이미지">
+                    <h3>동백전pay <br>등록하고 <br><span>10%캐시백</span></h3>
+
+
+                </li>
+                <li class="bg" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./imges/event_image3.png" alt="이벤트이미지">
+                    <h3>빠르고 편리한 <br>부산한상 <br><span>APP 쇼핑</span></h3>
+
+
+                </li>
+                <li class="bg" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./imges/event_image2.png" alt="이벤트이미지">
+                    <h3>리뷰작성 이벤트 <br>리뷰 작성후<br><span>적립금 받기</span></h3>
+
+
+                </li>
+
+            </ul>
+
+
+
+
+        </div><!-- 이벤트 e-->
+        <div class="review-banner-container"><!-- 포토리뷰s -->
+
+            <!-- 왼쪽 콘텐츠  (고정) -->
+            <div class="left-content">
+                <h2 class="title" data-aos="fade-left" data-aos-duration="1000">Photo review📝</h2>
+                <p class="subtitle" data-aos="fade-right" data-aos-duration="1000">
+                    우리 손으로 키운 싱싱한 농산물로<br>
+                    나만의 요리를 만들어 올려주세요!
+                </p>
+                <a href="#" data-aos="fade-right" data-aos-duration="1000">리뷰쓰러가기<span class="arrow">&rarr;</span></a>
+
+                <div class="gallery-grid"  data-aos="fade-up" data-aos-duration="1000">
+                    <div class="bg1-1">
+                        <img src="./imges/1-1.png" alt="연기">
+                    </div>
+                    <div class="grid-item main-thumb">
+                        <img src="./imges/1.png" alt="농산물 수확">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="right-content">
+
+                <div class="review-auto-container">
+                    <div class="review-track">
+
+                        <!-- [1~5번] -->
+                        <!-- 1 -->
+                        <div class="review-card">
+                            <div class="card-img-box">
+                                <img src="./imges/r_2.png" alt="요리 과정">
+                            </div>
+                            <div class="card-body">
+                                <div class="user-info">
+                                    <span class="avatar">🔴</span>
+                                    <span class="username">8282dada 님외 리뷰 / 40대</span>
+                                    <span class="rating">★★★★★ <span class="score">5</span></span>
+                                </div>
+                                <p class="review-text">
+                                    김밥을 정말 좋아하는 아이와 함께 특별한 시간을 보내고 싶어서 집에서 직접 김밥 만들기에 도전해 보았습니다.<br>평소에는 제가 만들어 주기만 했는데,
+                                    이번에는
+                                    아이가 직접 참여할 수 있도록 준비했어요. 🥰
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="review-card">
+                            <div class="card-img-box">
+                                <img src="./imges/r_3.png" alt="완성된 요리">
+                            </div>
+                            <div class="card-body">
+                                <div class="user-info">
+                                    <span class="avatar">🟡</span>
+                                    <span class="username">iliiilllii 님의 리뷰 / 30대</span>
+                                    <span class="rating">★★★★★ <span class="score">5</span></span>
+                                </div>
+                                <p class="review-text">
+                                    반찬 여러개 만들기 귀찮은 날~<br>
+                                    소고기가 새로 나왔길래 도전해보았습니다😉<br><br>
+                                    고기는 늘 냉동실에 있고<br>
+                                    양파만 있으면 되니까<br>
+                                    딱 우리집 도전템!😍
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="review-card">
+                            <div class="card-img-box">
+                                <img src="./imges/r_4.png" alt="동백전 장보기">
+                            </div>
+                            <div class="card-body">
+                                <div class="user-info">
+                                    <span class="avatar">🎁</span>
+                                    <span class="username">모모맘82 님의 리뷰 / 40대</span>
+                                    <span class="rating">★★★★★ <span class="score">5</span></span>
+                                </div>
+                                <p class="review-text">
+                                    부산 지역 특화 앱이라 그런지 혜택이 정말 쏠쏠해요.😊<br>가입할 때 받은 쿠폰에다가 부산 동백전 카드 결제 할인까지 챙기니까 마트 장 보는 것보다
+                                    훨씬가성비 좋게 한 상 차렸네요. 😊<br> 식재료도 산지 직송이라 엄청 싱싱해서 대만족입니다!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="review-card">
+                            <div class="card-img-box">
+                                <img src="./imges/r_1.png" alt="낙곱새 밀키트">
+                            </div>
+                            <div class="card-body">
+                                <div class="user-info">
+                                    <span class="avatar">🥢</span>
+                                    <span class="username">gwangalli_go 님의 리뷰 / 30대</span>
+                                    <span class="rating">★★★★★ <span class="score">5</span></span>
+                                </div>
+                                <p class="review-text">
+                                    퇴근하고 홈파티 하려고 '부산 낙곱새 한상' 밀키트 주문했습니다.😃<br> 재료가 세척부터 손질까지 완벽하게 되어 있어서 동봉된 양념장 넣고 끓이기만
+                                    하면
+                                    끝이네요!<br>
+                                    요리 똥손인데 남편이 파는 것보다 맛있대요.😂 밀키트 종류별로 다 도장 깨기 할 예정입니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="review-card">
+                            <div class="card-img-box">
+                                <img src="./imges/r_5.png" alt="부산 현지 노포 맛집">
+                            </div>
+                            <div class="card-body">
+                                <div class="user-info">
+                                    <span class="avatar">🗺️</span>
+                                    <span class="username">gourmet_king 님의 리뷰 / 50대</span>
+                                    <span class="rating">★★★★★ <span class="score">5</span></span>
+                                </div>
+                                <p class="review-text">
+                                    유명한 관광지 식당뿐만 아니라 부산 구석구석에 있는 진짜 현지인 노포 맛집 메뉴까지 배달·픽업이 되니까 신기하네요. '테마별 한상 추천' 기능 덕분에
+                                    매번새로운 메뉴를 실패 없이 성공하고 있습니다. 부산 식도락 여행 필수 앱으로 임명합니다.🥰
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- 1번 복제 -->
+                        <div class="review-card">
+                            <div class="card-img-box"> <img src="./imges/r_2.png" alt="요리 과정"></div>
+                            <div class="card-body">
+                                <div class="user-info">
+                                    <span class="avatar">🔴</span><span class="username">8282dada 님외 리뷰 /
+                                        40대</span><span class="rating">★★★★★ <span class="score">5</span></span>
+                                </div>
+                                <p class="review-text">김밥을 정말 좋아하는 아이와 함께 특별한 시간을 보내고 싶어서 집에서 직접 김밥 만들기에 도전해 보았습니다.<br>
+                                    평소에는
+                                    제가
+                                    만들어 주기만 했는데, 이번에는 아이가 직접 참여할 수 있도록 준비했어요. 🥰</p>
+                            </div>
+                        </div>
+
+                        <!-- 2번 복제 -->
+                        <div class="review-card">
+                            <div class="card-img-box"> <img src="./imges/r_3.png" alt="완성된 요리"></div>
+                            <div class="card-body">
+                                <div class="user-info">
+                                    <span class="avatar">🟡</span><span class="username">iliiilllii 님의 리뷰 /
+                                        30대</span><span class="rating">★★★★★ <span class="score">5</span></span>
+                                </div>
+                                <p class="review-text"> 반찬 여러개 만들기 귀찮은 날~<br>
+                                    소고기가 새로 나왔길래 도전해보았습니다😉<br><br>
+                                    고기는 늘 냉동실에 있고<br>
+                                    양파만 있으면 되니까<br>
+                                    딱 우리집 도전템!😍
+                            </div>
+                        </div>
+
+                        <!-- 3번 복제 -->
+                        <div class="review-card">
+                            <div class="card-img-box"><img src="./imges/r_4.png" alt="동백전 장보기"></div>
+                            <div class="card-body">
+                                <div class="user-info">
+                                    <span class="avatar">🎁</span><span class="username">모모맘82 님의 리뷰 / 40대</span><span
+                                        class="rating">★★★★★ <span class="score">5</span></span>
+                                </div>
+                                <p class="review-text">부산 지역 특화 앱이라 그런지 혜택이 정말 쏠쏠해요.😊<br>가입할 때 받은 쿠폰에다가 부산 동백전 카드 결제
+                                    할인까지 챙기니까 마트 장 보는 것보다 훨씬가성비 좋게 한 상 차렸네요. 😊<br> 식재료도 산지 직송이라 엄청 싱싱해서 대만족입니다!
+                            </div>
+                        </div>
+
+                        <!-- 4번 복제 -->
+                        <div class="review-card">
+                            <div class="card-img-box"><img src="./imges/2.jpg" alt="낙곱새 밀키트"></div>
+                            <div class="card-body">
+                                <div class="user-info">
+                                    <span class="avatar">🥢</span><span class="username">gwangalli_go 님의 리뷰 /
+                                        30대</span><span class="rating">★★★★★ <span class="score">5</span></span>
+                                </div>
+                                <p class="review-text"> 퇴근하고 홈파티 하려고 '부산 낙곱새 한상' 밀키트 주문했습니다.😃<br> 재료가 세척부터 손질까지 완벽하게 되어
+                                    있어서 동봉된 양념장 넣고 끓이기만
+                                    하면 끝이네요!<br>
+                                    요리 똥손인데 남편이 파는 것보다 맛있대요.😂 밀키트 종류별로 다 도장 깨기 할 예정입니다.
+                            </div>
+                        </div>
+
+                        <!-- 5번 복제 -->
+                        <div class="review-card">
+                            <div class="card-img-box"><img src="./imges/r_5.png" alt="부산 현지 노포 맛집"></div>
+                            <div class="card-body">
+                                <div class="user-info">
+                                    <span class="avatar">🗺️</span><span class="username">gourmet_king 님의 리뷰 /
+                                        50대</span><span class="rating">★★★★★ <span class="score">5</span></span>
+                                </div>
+                                <p class="review-text">유명한 관광지 식당뿐만 아니라 부산 구석구석에 있는 진짜 현지인 노포 맛집 메뉴까지 배달·픽업이 되니까 신기하네요.
+                                    '테마별 한상 추천' 기능 덕분에
+                                    매번새로운 메뉴를 실패 없이 성공하고 있습니다. 부산 식도락 여행 필수 앱으로 임명합니다.🥰
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- 포토리뷰 e -->
+        <div id="news_wrap"><!-- 뉴스 s-->
+            <div class="news" >
+                <h1 data-aos="fade-left" data-aos-duration="1000">NEWS <img src="./imges/news_icon.png" alt="음표"></h1>
+                <P data-aos="fade-right" data-aos-duration="1000">부산의 맛과 이야기를 정성껏 담아,<br>지금 마주할 수 있는 <br>부산한상의 소식을 전합니다.</P>
+
+                <a href="#" data-aos="fade-right" data-aos-duration="1000">소식 더보기<span class="arrow">&rarr;</span></a>
+
+            </div>
+            <div class="news_text" data-aos="fade-left" data-aos-duration="1000">
+                <div class="textbox1">
+                    <ul class="box1_inner">
+                        <li>
+                            <h1>01</h1>
+                            <h3>2026.05</h3>
+                        </li>
+                        <li><a href="#">
+                                <h2>부산한상 배달 안내</h2>
+                                <p>부산한상 [배달의 민족, 요기요, 쿠팡잇츠] 앱주문이 가능합니다.</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="textbox2">
+                    <ul class="box1_inner">
+                        <li>
+                            <h1>31</h1>
+                            <h3>2026.04</h3>
+                        </li>
+                        <li><a href="#">
+                                <h2>고유가 피해지원금사용안내</h2>
+                                <p>
+                                    부산한상 매장에서도 고유가 피해지원금을 사용하실 수 있어요.</p>
+                            </a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+        </div><!-- 뉴스 e-->
+        <div id="store_wrap"><!-- 스토어 -->
+            <ul class="store">
+                <li >
+                    <h1 data-aos="fade-left" data-aos-duration="1000">STORE <img src="./imges/store_icon.png" alt="깃발"></h1>
+                    <P data-aos="fade-right" data-aos-duration="1000">
+                        부산한상의 <br>
+                        오프라인 매장 <br>
+                        직접보고, 만지고<br>
+                        느낄수있는<br>
+                        매장을 방문해보세요</P>
+                    <a href="#"data-aos="fade-right" data-aos-duration="1000">매장안내<span class="arrow">&rarr;</span></a>
+                </li>
+
+
+                <li data-aos="fade-left" data-aos-duration="1000" class="store-media-box">
+
+                    <!-- 📸 1. 매장 사진 영역 -->
+                    <div class="store-img">
+                        <video src="./imges/storevideo.mp4" autoplay loop muted playsinline></video>
+                    </div>
+
+                    <!-- 📍 2. 지도 영역 -->
+                    <div class="store-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11512.162410288618!2d129.03172035106462!3d35.09178476578415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568e91025f4ee13%3A0x4e36234282dfc940!2z7ZWc7IOB!5e0!3m2!1sko!2skr!4v1781587642882!5m2!1sko!2skr"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </li>
+            </ul>
+        </div><!-- 스토어 e-->
+        <div id="partner_wrap"> <!-- 파트너 s-->
+            <div class="partner-section">
+                <div class="partner-inner">
+
+                    <!-- 첫 번째 줄: 왼쪽 라인 -->
+                    <div class="partner-slider-row row-left">
+                        <div class="partner-track" id="partnerTrackLeft">
+                            <!-- 로고  12개 -->
+                            <div class="partner-card"><img src="./imges/partner/p_logo1.png" alt="어박사어간장"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo2.png" alt="기장물산"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo3.png" alt="고래사어묵"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo4.png" alt="기장사람들"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo5.png" alt="바다찬찬"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo6.png" alt="덕화명란"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo7.png" alt="세화김"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo8.png" alt="HanjinFood"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo9.png" alt="부산샌드"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo10.png" alt="부산청과"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo11.png" alt="주식회사석화"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo12.png" alt="삼진어묵"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo13.png" alt="어설랑"></div>
+                        </div>
+                    </div>
+
+                    <!-- 두 번째 줄: 오른쪽라인 -->
+                    <div class="partner-slider-row row-right">
+                        <div class="partner-track" id="partnerTrackRight">
+                            <!-- 로고 12개 -->
+                            <div class="partner-card"><img src="./imges/partner/p_logo7.png" alt="세화김"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo8.png" alt="HanjinFood"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo9.png" alt="부산샌드"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo10.png" alt="부산청과"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo11.png" alt="주식회사석화"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo12.png" alt="삼진어묵"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo13.png" alt="어설랑"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo1.png" alt="어박사어간장"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo2.png" alt="기장물산"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo3.png" alt="고래사어묵"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo4.png" alt="기장사람들"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo5.png" alt="바다찬찬"></div>
+                            <div class="partner-card"><img src="./imges/partner/p_logo6.png" alt="덕화명란"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div><!-- 파트너 e-->
+        <div id="site-footer"><!-- 푸터 시작 -->
+            <div class="footer-container">
+
+                <!-- 왼쪽 구역 -->
+                <div class="footer-left">
+                    <h2 class="footer-logo"><img src="./imges/f_logo.png" alt=""></h2>
+
+                    <ul class="footer-menu">
+                        <li><a href="#privacy">개인정보처리방침</a></li>
+                        <li><a href="#email-reject">이메일무단수집거부</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#partnership">입점문의</a></li>
+                    </ul>
+
+                    <div class="footer-info">
+                        <p style="margin: 0;">
+                            <span>부산시 중구 중앙대로 206 10층</span>
+                            <span>대표이사 : 김바다</span>
+                        </p>
+                        <p style="margin: 4px 0 0 0;">
+                            <span>사업자등록번호 : 000-00-00000</span>
+                            <span>통신판매업번호 : 2026-부산중구-1004</span>
+                        </p>
+                        <div class="copyright">
+                            &copy; 2026 BusanHanSang of market, All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 오른쪽 구역 -->
+                <div class="footer-right">
+                    <div class="footer-sns">
+                        <a href="https://instagram.com" class="sns-btn" target="_blank" aria-label="인스타그램"><i
+                                class="fa-brands fa-instagram"><img src="./imges/sns_insta.png" alt=""></i></a>
+                        <a href="https://youtube.com" class="sns-btn" target="_blank" aria-label="유튜브"><i
+                                class="fa-brands fa-youtube"><img src="./imges/sns_youtube.png" alt=""></i></a>
+                        <a href="https://kakao.com" class="sns-btn" target="_blank" aria-label="카카오톡"><i
+                                class="fa-comment fa-solid"><img src="./imges/sns_kakao.png" alt=""></i></a>
+                    </div>
+                    <div class="cs-box">
+                        <span class="cs-label">고객센터</span>
+                        <h3 class="cs-number">051-000-0000</h3>
+                        <p class="cs-hours">
+                            월 - 금요일 09:00 ~ 18:00 / 점심시간 12:30 ~ 13:30<br>
+                            토, 일, 공휴일 휴무
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div><!-- 푸터 끝 -->
+    </div>
+
+    <!-- 탑 버튼 -->
+    <a href="#" class="top_btn"><img src="./imges/top_btn.png" alt="top버튼" /></a>
+    <!-- 마우스 -->
+    <div id="cursor"></div>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- CDN형식으로 연결한 aosjs -->
+    <script src="./js/jquery-4.0.0.min.js"></script>
+    <!-- 외부 js 연결 -->
+    <script src="./js/script.js"></script>
+
+
+</body>
+
+</html>

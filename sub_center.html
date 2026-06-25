@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부산한상</title>
+    <!-- 파비콘 연결 -->
+    <link rel="shortcut icon" href="./imges/apple-icon-120x120.png" type="image/x-icon">
+    <!-- 외부 css 연결 -->
+    <link rel="stylesheet" href="./css/sub_center_style.css">
+    <!-- CDN 형식으로 연결한 aosjs -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrap"><!-- 헤더전체랩 s -->
+            <div class="header_wrap">
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./imges/main_logo.png" alt="부산한상로고">
+                    </a>
+                </h1>
+                <ul id="gnb">
+                    <li><a href="./sub_about.html">한상소개<div class="solid"></div></a>
+                        <ul class="sub">
+                            <li><a href="./sub_about.html#story_wrap">Brand</a></li>
+                            <li><a href="./sub_about.html#c_wrap">Point</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="./sub_market.html">한상마켓<div class="solid"></div></a>
+                        <ul class="sub">
+                            <li><a href="./sub_market.html#sea_wrap">수산물</a></li>
+                            <li><a href="./sub_market.html#farm_container">농산물</a></li>
+                            <li><a href="./sub_market.html#meat_wrap">축산물</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub_recipe.html">한상레시피<div class="solid"></div></a>
+                        <ul class="sub">
+                            <li><a href="./sub_recipe.html#recipe_wrap">추천레시피</a></li>
+                            <li><a href="./sub_recipe.html#fast_wrap">10분완성</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub_center.html">한상센터<div class="solid"></div></a>
+                        <ul class="sub">
+                            <li><a href="./sub_center.html#event_wrap">한상이벤트</a></li>
+                            <li><a href="./sub_center.html#qa_wrap">Q&A</a></li>
+                            <li><a href="./sub_center.html#news_wrap">한상소식</a></li>
+                            <li><a href="./sub_center.html#join-wrap">입점안내</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="search_box">
+                    <input type="search" placeholder="Search">
+                </div>
+                <ul class="gnb_icon">
+
+                    <li><a href="#">
+                            <!-- 기본 장바구니 -->
+                            <img src="./imges/me_icon1.png" alt="마이페이지" class="normal_img">
+                            <!-- 호버 시 장바구니 -->
+                            <img src="./imges/me_icon2.png" alt="마이페이지" class="hover_img">
+                        </a></li>
+                    <li><a href="#">
+                            <!-- 기본 장바구니 -->
+                            <img src="./imges/cart_icon1.png" alt="장바구니" class="normal_img">
+                            <!-- 호버 시 장바구니 -->
+                            <img src="./imges/cart_icon2.png" alt="장바구니" class="hover_img">
+                        </a></li>
+                </ul>
+
+            </div>
+            <div class="sub_bg"></div>
+        </div><!-- 헤더전체랩 e -->
+    <div id="main"><!-- 메인 s -->
+        <div class="main_img">
+            <img src="./imges/main_c_img.png" alt="메인이미지">
+        </div>
+        <div class="main_title" data-aos="fade-left" data-aos-duration="2000">
+
+            <h2>특별한 혜택 </h2>
+            <h1>놓치면 아쉬운 <br>이벤트&소식</h1>
+            <p>
+                오직 부산한상에서만 드리는 풍성한 혜택과 <br>따끈따끈한 요리 소식을 한곳에서 만나보세요.
+            </p>
+
+        </div>
+    </div><!-- 메인 e -->
+    <div id="event_wrap"><!-- 이벤트 s -->
+        <div class="event-title" data-aos="fade-left" data-aos-duration="1000">
+            <h1>Event</h1>
+        </div>
+
+        <!-- 3열 카드 리스트 영역 -->
+        <div class="event-list" data-aos="fade-up" data-aos-duration="2000">
+
+            <!-- 카드 1 (왼쪽) -->
+            <div class="event-card prev" data-index="0">
+                <div class="event-img-box img-bg-blue">
+                    <img src="./imges/event_img1.png" alt="앱 다운로드 이벤트">
+                </div>
+                <div class="event-info">
+                    <h3>부산한상 앱다운로드이벤트</h3>
+                    <p class="event-desc">부산한상 앱다운로드시 10,000<br>쿠폰을 드립니다.</p>
+                    <span class="event-date">2026.06.01 ~</span>
+                </div>
+            </div>
+
+            <!-- 카드 2 (가운데 활성화) -->
+            <div class="event-card active" data-index="1">
+                <div class="event-img-box img-bg-light">
+                    <img src="./imges/event_img2.png" alt="동백전 온라인 쇼핑">
+                </div>
+                <div class="event-info">
+                    <h3>동백전으로 온라인 쇼핑</h3>
+                    <p class="event-desc">동백전 등록하고<br>적립금 3,000원 받으세요!</p>
+                    <span class="event-date">2026.06.01 ~</span>
+                </div>
+            </div>
+
+            <!-- 카드 3 (오른쪽) -->
+            <div class="event-card next" data-index="2">
+                <div class="event-img-box img-bg-yellow">
+                    <img src="./imges/event_img3.png" alt="오픈 이벤트">
+                </div>
+                <div class="event-info">
+                    <h3>오픈 이벤트</h3>
+                    <p class="event-desc">오픈 이벤트로 부산한상 굿즈를<br>선물로 드려요!</p>
+                    <span class="event-date">2026.06.01 ~ 06.31</span>
+                </div>
+            </div>
+
+        </div>
+    </div><!-- 이벤트 e -->
+    <div id="qa_wrap"> <!-- 큐앤에이 s -->
+        <h1 data-aos="fade-left" data-aos-duration="1000">Q&A</h1>
+        <div class="qa" data-aos="fade-up" data-aos-duration="2000">
+
+            <!-- 1번 질문 -->
+            <div class="qa-item">
+                <div class="qa-header">
+                    <div class="qa-left">
+                        <span class="icon-q">Q</span>
+                        <span class="question">배송은 얼마나 걸리나요?</span>
+                    </div>
+                    <span class="category">배송/문의</span>
+                </div>
+                <div class="qa-body">
+                    <div class="answer-content">
+                        <p class="ans-text"><strong>답변:</strong> 평일 오후 [2시] 이전 주문 건은 당일 출고되며, 일반적으로 출고 후 영업일 기준 1~3일 이내에
+                            수령하실 수 있습니다.</p>
+                        <p class="notice-text"><strong>안내:</strong> 산간벽지나 도서 지방, 혹은 명절 등 택배 물량이 몰리는 시기에는 1~2일 더 소요될 수 있는
+                            점 양해 부탁드립니다. 배송 현황은 [마이페이지 > 주문/배송 조회]에서 실시간으로 확인하실 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2번 질문 -->
+            <div class="qa-item">
+                <div class="qa-header">
+                    <div class="qa-left">
+                        <span class="icon-q">Q</span>
+                        <span class="question">적립금은 언제 지급되나요?</span>
+                    </div>
+                    <span class="category">이벤트/쿠폰/적립금</span>
+                </div>
+                <div class="qa-body">
+                    <div class="answer-content">
+                        <p class="ans-text"><strong>답변:</strong> 구매에 따른 적립금은 배송이 완료된 후 사용자가 [구매확정]을 누르신 즉시 자동으로 지급됩니다.
+                        </p>
+                        <p class="notice-text"><strong>안내:</strong> 만약 직접 [구매확정]을 누르지 않으시더라도, 배송 완료일로부터 [7일]이 지나면 시스템에
+                            의해 자동 구매확정이 이루어지며 적립금이 부여됩니다. 리뷰 작성 시 지급되는 추가 적립금은 리뷰 검수 후 [24시간] 이내에 지급됩니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3번 질문 -->
+            <div class="qa-item">
+                <div class="qa-header">
+                    <div class="qa-left">
+                        <span class="icon-q">Q</span>
+                        <span class="question">부산한상 앱이 켜지지 않아요</span>
+                    </div>
+                    <span class="category">시스템오류</span>
+                </div>
+                <div class="qa-body">
+                    <div class="answer-content">
+                        <p class="ans-text"><strong>답변:</strong> 앱 실행 오류는 일시적인 네트워크 불안정이나 캐시 데이터 충돌로 인해 발생할 수 있습니다. 아래의
+                            방법으로 조치해 보세요.</p>
+                        <p class="notice-text"><strong>안내:</strong> 1. 네트워크 확인 (Wi-Fi 토글) / 2. 앱 최신 버전 업데이트 / 3. 캐시 삭제
+                            또는 재설치. 문제가 지속될 경우 고객센터로 연락해 주세요.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4번 질문 -->
+            <div class="qa-item">
+                <div class="qa-header">
+                    <div class="qa-left">
+                        <span class="icon-q">Q</span>
+                        <span class="question">셀프픽업 상품 구매 후 교환권은 어떤방식으로 받나요?</span>
+                    </div>
+                    <span class="category">픽업</span>
+                </div>
+                <div class="qa-body">
+                    <div class="answer-content">
+                        <p class="ans-text"><strong>답변:</strong> 셀프픽업 상품 결제가 완료되면, 부산한상 앱 내 [마이페이지 > 나의 쿠폰함/교환권] 메뉴로 모바일
+                            교환권(바코드 또는 QR코드)이 즉시 발급됩니다.</p>
+                        <p class="notice-text"><strong>안내:</strong> 또한 주문 시 등록하신 휴대폰 번호로도 카카오톡 알림톡(또는 MMS 문자메시지)을 통해 교환권
+                            링크가 함께 발송됩니다.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div><!-- 큐앤에이 e -->
+    <div id="news_wrap"><!-- 뉴스 s-->
+        <h2 class="news_title" data-aos="fade-left" data-aos-duration="1000">부산한상소식</h2>
+
+        <div class="news_container" data-aos="fade-up" data-aos-duration="2000">
+            <!-- 첫 번째 카드 -->
+            <div class="news_card">
+                <a href="#">
+                    <div class="card_img">
+                        <img src="./imges/n_01.png" alt="부산한상 2026 국제식품전 참가">
+                    </div>
+                    <div class="card_content">
+                        <h3 class="card_title">부산한상 2026 국제식품전 참가</h3>
+                        <p class="card_desc">부산한상 기업들의 우수한 제품을 만나보세요.</p>
+                        <span class="card_date">2026.06.01</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 두 번째 카드 -->
+            <div class="news_card">
+                <a href="#">
+                    <div class="card_img">
+                        <img src="./imges/n_02.png" alt="고유가 피해지원금 사용안내">
+                    </div>
+                    <div class="card_content">
+                        <h3 class="card_title">고유가 피해지원금 사용안내</h3>
+                        <p class="card_desc">고유가 피해지원금 사용 가능합니다.</p>
+                        <span class="card_date">2026.06.01</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 세 번째 카드 -->
+            <div class="news_card">
+                <a href="#">
+                    <div class="card_img">
+                        <img src="./imges/n_03.png" alt="부산한상 오픈">
+                    </div>
+                    <div class="card_content">
+                        <h3 class="card_title">부산한상 오픈</h3>
+                        <p class="card_desc">부산한상 오픈식을 개최합니다.</p>
+                        <span class="card_date">2026.06.01</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div><!-- 뉴스 e -->
+    <div id="join-wrap"><!-- 입점 s -->
+        <div class="join-header">
+            <h2 class="join-title" data-aos="fade-left" data-aos-duration="1000">입점신청</h2>
+        </div>
+
+        <div class="join-process" data-aos="fade-up" data-aos-duration="2000">
+            <ol class="process-list">
+                <!-- 01단계 -->
+                <li class="process-item">
+                    <div class="process-icon-box">
+                        <img src="./imges/a_1.png" alt="입점" class="process-icon">
+                    </div>
+                    <span class="process-num">01</span>
+                    <strong class="process-subject">신청서 작성</strong>
+                    <p class="process-desc">입점 신청서를<br>작성해 주세요.</p>
+                </li>
+                <!-- 02단계 -->
+                <li class="process-item">
+                    <div class="process-icon-box">
+                        <img src="./imges/a_2.png" alt="입점" class="process-icon">
+                    </div>
+                    <span class="process-num">02</span>
+                    <strong class="process-subject">심사진행</strong>
+                    <p class="process-desc">담당자 검토 후<br>개별 연락드립니다.</p>
+                </li>
+                <!-- 03단계 -->
+                <li class="process-item">
+                    <div class="process-icon-box">
+                        <img src="./imges/a_3.png" alt="입점" class="process-icon">
+                    </div>
+                    <span class="process-num">03</span>
+                    <strong class="process-subject">계약체결</strong>
+                    <p class="process-desc">계약 체결 후<br>입점이 확정됩니다.</p>
+                </li>
+                <!-- 04단계 -->
+                <li class="process-item">
+                    <div class="process-icon-box">
+                        <img src="./imges/a_4.png" alt="입점" class="process-icon">
+                    </div>
+                    <span class="process-num">04</span>
+                    <strong class="process-subject">입점완료</strong>
+                    <p class="process-desc">부산한상에서<br>상품을 판매하세요!</p>
+                </li>
+            </ol>
+        </div>
+
+        <!-- 버튼  -->
+        <div class="join-btn-group" data-aos="fade-up" data-aos-duration="1000">
+            <a href="#" class="btn-join-primary">입점신청 바로가기 <span class="arrow">&rarr;</span></a>
+            <a href="#" class="btn-join-secondary">안내서 다운받기 <span class="arrow">&rarr;</span></a>
+        </div>
+
+        <!-- 하단 문의  -->
+        <div class="join-cs-bar" data-aos="fade-up" data-aos-duration="1000">
+            <div class="cs-info-text">
+                <h3 class="cs-title">입점문의 <img src="./imges/call_icon.png" alt=""></h3>
+                <p class="cs-desc">입점관련 문의사항은 언제든지<br>문의해주세요.</p>
+            </div>
+            <div class="cs-contact-details">
+                <a href="tel:051-555-1234" class="cs-phone">051-555-1234</a>
+                <a href="mailto:busanhansang@naver.com" class="cs-email">busanhansang@naver.com</a>
+            </div>
+            <div class="cs-image-box">
+                <img src="./imges/call_icon2.png" alt="" class="cs-img">
+            </div>
+        </div>
+
+    </div><!-- 입점 e -->
+    <div id="site-footer"><!-- 푸터 시작 -->
+        <div class="footer-container">
+
+            <!-- 왼쪽 구역 -->
+            <div class="footer-left">
+                <h2 class="footer-logo"><img src="./imges/f_logo.png" alt=""></h2>
+
+                <ul class="footer-menu">
+                    <li><a href="#privacy">개인정보처리방침</a></li>
+                    <li><a href="#email-reject">이메일무단수집거부</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#partnership">입점문의</a></li>
+                </ul>
+
+                <div class="footer-info">
+                    <p style="margin: 0;">
+                        <span>부산시 중구 중앙대로 206 10층</span>
+                        <span>대표이사 : 김바다</span>
+                    </p>
+                    <p style="margin: 4px 0 0 0;">
+                        <span>사업자등록번호 : 000-00-00000</span>
+                        <span>통신판매업번호 : 2026-부산중구-1004</span>
+                    </p>
+                    <div class="copyright">
+                        &copy; 2026 BusanHanSang of market, All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 오른쪽 구역 -->
+            <div class="footer-right">
+                <div class="footer-sns">
+                    <a href="https://instagram.com" class="sns-btn" target="_blank" aria-label="인스타그램"><i
+                            class="fa-brands fa-instagram"><img src="./imges/sns_insta.png" alt=""></i></a>
+                    <a href="https://youtube.com" class="sns-btn" target="_blank" aria-label="유튜브"><i
+                            class="fa-brands fa-youtube"><img src="./imges/sns_youtube.png" alt=""></i></a>
+                    <a href="https://kakao.com" class="sns-btn" target="_blank" aria-label="카카오톡"><i
+                            class="fa-comment fa-solid"><img src="./imges/sns_kakao.png" alt=""></i></a>
+                </div>
+                <div class="cs-box">
+                    <span class="cs-label">고객센터</span>
+                    <h3 class="cs-number">051-000-0000</h3>
+                    <p class="cs-hours">
+                        월 - 금요일 09:00 ~ 18:00 / 점심시간 12:30 ~ 13:30<br>
+                        토, 일, 공휴일 휴무
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- 푸터 끝 -->
+    
+
+    <!-- 탑 버튼 -->
+    <a href="#" class="top_btn"><img src="./imges/top_btn.png" alt="top버튼" /></a>
+    <!-- 마우스 -->
+    <div id="cursor"></div>
+
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- CDN형식으로 연결한 aosjs -->
+    <script src="./js/jquery-4.0.0.min.js"></script>
+    <!-- 외부 js 연결 -->
+    <script src="./js/sub_center_script.js"></script>
+
+
+</body>
+
+</html>
