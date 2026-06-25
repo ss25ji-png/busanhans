@@ -19,6 +19,10 @@
      line-height: 24px;
      color: rgb(70, 70, 70);
  }
+ #wrap_wrap {
+     min-width: 1400px;
+     overflow: hidden;
+ }
 
 
  @font-face {
