@@ -757,7 +757,7 @@
      margin: 100px auto;
      max-width: 100%;
      box-sizing: border-box;
-     height: 250px;
+     height: 300px;
  }
 
  .banner-container {
@@ -925,14 +925,15 @@
 
  /*-- 고정배경 --*/
  #fix_banner {
-     padding-top: 100px;
-     font-size: 35px;
+     font-size: 32px;
      color: #fff;
      line-height: 60px;
      text-align: center;
-     margin: 200px auto;
+     margin: 100px auto;
      width: 100vw;
      height: 250px;
+     padding: 60px;
+     box-sizing: border-box;
 
      background: fixed url(../imges/fix_banner_image.png) no-repeat center;
  }
@@ -944,7 +945,7 @@
      position: relative;
      width: 100%;
      max-width: 1320px;
-     margin: 100px auto;
+     margin: 0px auto;
 
      box-sizing: border-box;
  }
@@ -1263,8 +1264,32 @@
 
  .bg1-1 {
      position: absolute;
-     top: 23%;
-     left: 32%;
+     top: 15%;
+     left: 70%;
+ }
+
+ .bg1-2 {
+     position: absolute;
+     top: 29%;
+     left: 52%;
+ }
+
+ .bg1-2 img {
+     height: 210px;
+     animation: wok-snap 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate;
+     backface-visibility: hidden;
+     transform-style: preserve-3d;
+     transform-origin: left center;
+ }
+
+ @keyframes wok-snap {
+     0% {
+         transform: rotate(0deg) translateY(0);
+     }
+
+     100% {
+         transform: rotate(-12deg) translateY(-8px);
+     }
  }
 
  .bg1-1 img {
@@ -1587,7 +1612,7 @@
  .store a:hover {
      background-color: #0b4c84;
      color: #fff;
-      transition: background-color 0.2s ease;
+     transition: background-color 0.2s ease;
  }
 
  .store a .arrow {
