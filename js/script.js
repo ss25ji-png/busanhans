@@ -1,3 +1,26 @@
+
+// 
+const introLayer = document.getElementById('intro-layer');
+const introVideo = document.getElementById('intro-video');
+
+
+if (!sessionStorage.getItem('visited')) {
+
+    sessionStorage.setItem('visited', 'true');
+
+    introVideo.addEventListener('ended', function () {
+        closeIntro();
+    });
+} else {
+    introLayer.style.display = 'none';
+    introVideo.pause();
+}
+
+function closeIntro() {
+    introLayer.classList.add('hide');
+}
+
+//gnb sub
 $(function () {
     $("#gnb>li").mouseenter(function () {
         $(".sub, .sub_bg").stop().fadeIn(400);
