@@ -96,6 +96,33 @@
      font-display: swap;
  }
 
+ /* 인트로영상 */
+#intro-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000; 
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease; 
+}
+
+/* 영상 스타일 */
+#intro-video {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#intro-layer.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
 
 
  /*-- 헤더 --*/
@@ -119,7 +146,7 @@
      box-sizing: border-box;
      padding: 0 50px 0 60px;
      gap: 20px;
-     z-index: 9999;
+     z-index: 9900;
  }
 
  /*-- gnb --*/
